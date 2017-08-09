@@ -12,7 +12,6 @@ var carDetails = {
 }
 
 // CODE HERE
-// var {color, make, model, year} = carDetails;
 
 
 // ========================
@@ -23,16 +22,8 @@ var carDetails = {
 function greeting( obj ) {
   // CODE HERE
   
-  // var {firstName, lastName, title} = obj
-  
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
 }
-
-// greeting({firstName: 'Henry', lastName: 'Von Eckleberry', title: 'Sir'})
-// ANSWER: 'Hello, Sir Henry Von Eckleberry!'
-
-// greeting({firstName: 'Betty', lastName: 'LeJavascript', title: 'Queen'})
-// ANSWER: 'Hello, Queen Betty LeJavascript!'
 
 
 // ========================
@@ -42,17 +33,6 @@ function greeting( obj ) {
 
   // CODE HERE
 
-// function totalPopulation(obj) {
-//   var {utah, california, texas, arizona} = obj;
-//   return utah + california + texas + arizona;
-// }
-
-// totalPopulation({utah: 10, california: 29087, texas: 82937, arizona: 28347})
-// ANSWER: 140381
-
-// totalPopulation({utah: 1045, california: 987, texas: 192937, arizona: 347})
-// ANSWER: 195316
-
 
 // ========================
 
@@ -60,17 +40,6 @@ function greeting( obj ) {
 // Write a function called ingrediants that will take in an object. This object will have 3 properties named carb, fat, and protein. The property values will be strings. Use object destructuring to save the property values to new variables. Push these new variables to an array and return the array. 
 
   // CODE HERE
-
-// function ingrediants( obj ) {
-//   var {carb, fat, protein} = obj;
-//   return [carb, fat, protein]
-// }
-
-// ingrediants({carb: 'flour', fat: 'butter', protein: 'eggs'})
-// ANSWER: [ 'flour', 'butter', 'eggs' ]
-
-// ingrediants({carb: 'rice', fat: 'bacon grease', protein: 'chicken'})
-// ANSWER: [ 'rice', 'bacon grease', 'chicken' ]
 
 
 // ========================
@@ -86,16 +55,6 @@ function greeting( obj ) {
 
   // CODE HERE
 
-// function largeNumbers ( {first, second, third} ) {
-//   return Math.min(first, second, third)
-// }
-
-// largeNumbers({first: 10, second: 2, third: 90})
-// ANSWER: 2
-
-// largeNumbers({first: 1, second: 2, third: 80})
-// ANSWER: 1
-
 
 // ========================
 
@@ -103,14 +62,3 @@ function greeting( obj ) {
 // Write a function called numberGroups that will take a destructured object as it's parameter. The object properties will be named a, b, and c and their values will be arrays of numbers. Find the longest array and return that array. 
 
   // CODE HERE
-
-// function numberGroups( { a, b, c} ) {
-//   var start = a.length > b.length ? a : b;
-//   return start.length > c.length ? start : c;
-// }
-
-// numberGroups({a:[1, 2, 3], b:[1], c:[1, 2, 3, 4, 5]})
-// ANSWER: [ 1, 2, 3, 4, 5 ]
-
-// numberGroups({a:[1, 2, 3], b:[1, 2, 3, 4], c:[1, 2, 3]})
-// ANSWER: [ 1, 2, 3, 4 ]
