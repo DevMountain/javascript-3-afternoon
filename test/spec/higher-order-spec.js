@@ -1,13 +1,3 @@
-// Nested
-
-
-
-
-// Destrcutroring
-
-
-// Filter
-
 describe('filters1', ()=>{
   describe('evenNumbers', ()=>{
     it('should exist', ()=>{
