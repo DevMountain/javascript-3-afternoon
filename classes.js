@@ -68,20 +68,21 @@ BLACK DIAMOND
 Widget Co has a factory that makes widgets.
 Factories have Machines
 
-Make a Machine class
+Make a Machine class that takes in no parameters
 It has :
-- widgets_made_count
-- wear_and_tear_count
-- needs_reboot
+- widgets_made_count - default 0
+- wear_and_tear_count - default 0
+- needs_reboot - default false
 
 It can :
-- makeWidget
+- makeWidgets
     : This function takes in a number and increases widgets_made_count by that amount
       It also increases wear_and_tear_count by 1 for every 50 
 - fixMachine
     : This function sets needs_reboot to true
 - reboot
     : This function returns a function that is called when the machine is done rebooting
-      It should set decrease wear_and_tear_count by 100, and set needs_reboot to false
+      It should set decrease wear_and_tear_count by 10, and set needs_reboot to false
 
 */
+
