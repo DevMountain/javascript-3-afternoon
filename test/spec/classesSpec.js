@@ -62,6 +62,7 @@ describe('Classes', function () {
     it('sets all properties in the constructor and title and bonus', function () {
       let emp = new ProgressiveManager("Dallin", "Anderson", "Dallin@DallinDallin.com", 25);
 
+
       expect(emp.first_name).toEqual("Dallin")
       expect(emp.last_name).toEqual("Anderson")
       expect(emp.email).toEqual("Dallin@DallinDallin.com")
@@ -73,24 +74,25 @@ describe('Classes', function () {
     })
     it('updates title on hire', function () {
       let emp = new ProgressiveManager("Dallin", "Anderson", "Dallin@DallinDallin.com", 25)
+
       emp.hire(new Employee("Ballin", "BAnderson", "Ballin@BallinBallin.com", 22));
       expect(emp.title).toEqual("Barely Manager")
 
-      hireTimes(5);
+      hireTimes(5, emp);
       expect(emp.title).toEqual("Mostly Manager")
 
-      hireTimes(20);
+      hireTimes(20, emp);
       expect(emp.title).toEqual("Manager")
 
-      hireTimes(50);
+      hireTimes(50, emp);
       expect(emp.title).toEqual("Manager Plus")
 
-      hireTimes(50);
-      expect(emp.title).toEqual("Bestest Plus")
+      hireTimes(50, emp);
+      expect(emp.title).toEqual("Bestest Manager")
     })
     it('can fire employees for bonuses', function () {
-      let emp = new Manager("Dallin", "Anderson", "Dallin@DallinDallin.com", 25)
-      emp.hireTimes(10, emp);
+      let emp = new ProgressiveManager("Dallin", "Anderson", "Dallin@DallinDallin.com", 25)
+      hireTimes(10, emp);
       emp.fire(1);
       expect(emp.bonus).toEqual(100)
 
@@ -156,7 +158,7 @@ describe('Classes', function () {
       let rebootComplete = machine.reboot();
       rebootComplete();
 
-      expect(machine.wear_and_tear_count).toEqual(490);
+      expect(machine.wear_and_tear_count).toEqual(90);
     })
   })
 })

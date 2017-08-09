@@ -6,8 +6,8 @@ Classes are a tool for building similar objects over and over again.
 They are a construct that helps your organize your code.
 
 Let's work with some employees at a company.
-You work for Widget Co.  They have hundreds of employees. 
-Make a class to help us build all of the employees.  
+You work for Widget Co.  They have hundreds of employees.
+Make a class to help us build all of the employees.
 Each employee has:
 - first_name
 - last_name
@@ -42,6 +42,9 @@ call your class Manager
 */
 
 
+
+
+
 /*
 Manager for Widget Co. get promoted when they get more employees, and get a bonus when they fire employees.
 Progressive Managers have all the same properties as the manager, but
@@ -63,7 +66,9 @@ call you class ProgressiveManager
 */
 
 
-/* 
+
+
+/*
 BLACK DIAMOND
 Widget Co has a factory that makes widgets.
 Factories have Machines
@@ -77,7 +82,7 @@ It has :
 It can :
 - makeWidgets
     : This function takes in a number and increases widgets_made_count by that amount
-      It also increases wear_and_tear_count by 1 for every 50 
+      It also increases wear_and_tear_count by 1 for every 50
 - fixMachine
     : This function sets needs_reboot to true
 - reboot
@@ -85,4 +90,3 @@ It can :
       It should set decrease wear_and_tear_count by 10, and set needs_reboot to false
 
 */
-
