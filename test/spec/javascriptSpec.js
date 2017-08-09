@@ -1,6 +1,3 @@
-describe('problems', ()=>{
-
-
 // Nested
 
 
@@ -19,75 +16,7 @@ describe('problems', ()=>{
 
 // Filter
 
-describe('filterTotal', ()=>{
-  describe('evenNumbers', ()=>{
-    it('should exist', ()=>{
-      expect(evenNumbers).toBeDefined();
-    })
-    it('should be an array', ()=>{
-      expect(evenNumbers.length).toBeDefined();
-    })
-    it('should have 8 elements', ()=>{
-      expect(evenNumbers.length).toBe(8);
-    })
-    it('should have the correct elements', ()=>{
-      expect(evenNumbers.sort().toString()).toBe([6, 2, 6, 8, 4, 2, 8, 4].sort().toString());
-    })
-  })
-})
 
-describe('filterTotal', ()=>{
-  describe('evenNumbers', ()=>{
-    it('should exist', ()=>{
-      expect(evenNumbers).toBeDefined();
-    })
-    it('should be an array', ()=>{
-      expect(evenNumbers.length).toBeDefined();
-    })
-    it('should have 8 elements', ()=>{
-      expect(evenNumbers.length).toBe(8);
-    })
-    it('should have the correct elements', ()=>{
-      expect(evenNumbers.sort().toString()).toBe([6, 2, 6, 8, 4, 2, 8, 4].sort().toString());
-    })
-  })
-})
-
-describe('evenNumbers', ()=>{
-  it('should exist', ()=>{
-    expect(evenNumbers).toBeDefined();
-  })
-  it('should be an array', ()=>{
-    expect(evenNumbers.length).toBeDefined();
-  })
-  it('should have 8 elements', ()=>{
-    expect(evenNumbers.length).toBe(8);
-  })
-  it('should have the correct elements', ()=>{
-    expect(evenNumbers.sort().toString()).toBe([6, 2, 6, 8, 4, 2, 8, 4].sort().toString());
-  })
-})
-
-describe('postTaxPrices', ()=>{
-  it('should exist', ()=>{
-    expect(postTaxPrices).toBeDefined();
-  })
-  it('should be an array', ()=>{
-    expect(postTaxPrices.length).toBeDefined();
-  })
-  it('should have 9 elements', ()=>{
-    expect(postTaxPrices.length).toBe(9);
-  })
-  it('should have the correct totals', ()=>{
-    const diff = [16.05, 24.610000000000003, 83.46000000000001, 36.38, 12.84, 92.02000000000001, 12.84, 84.53, 34.24].reduce()
-
-    expect(postTaxPrices.toString()).toBe([6, 2, 6, 8, 4, 2, 8, 4].toString());
-  })
-})
-
-
-
-})
 // describe('fns-and-scope', function () {
 //
 //
