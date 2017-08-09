@@ -6,14 +6,6 @@
 // Destrcutroring
 
 
-
-
-// Classes
-
-
-
-
-
 // Filter
 
 describe('filters1', ()=>{
