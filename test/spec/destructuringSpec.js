@@ -70,13 +70,13 @@ describe('totalPopulation', function () {
 // ========================
 
 
-describe('ingrediants', function () {
+describe('ingredients', function () {
   it('should exist', function () {
-    expect(ingrediants).toBeDefined();
+    expect(ingredients).toBeDefined();
   })
   it('should return the correct value', function () {
-    expect(ingrediants({carb: 'flour', fat: 'butter', protein: 'eggs'}).sort()).toEqual([ 'flour', 'butter', 'eggs' ].sort());
-    expect(ingrediants({carb: 'rice', fat: 'bacon grease', protein: 'chicken'}).sort()).toEqual([ 'rice', 'bacon grease', 'chicken' ].sort());
+    expect(ingredients({carb: 'flour', fat: 'butter', protein: 'eggs'}).sort()).toEqual([ 'flour', 'butter', 'eggs' ].sort());
+    expect(ingredients({carb: 'rice', fat: 'bacon grease', protein: 'chicken'}).sort()).toEqual([ 'rice', 'bacon grease', 'chicken' ].sort());
   })
 })
 
