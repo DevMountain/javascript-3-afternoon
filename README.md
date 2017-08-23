@@ -10,4 +10,4 @@ This project contains a lot of problems because we would like you to push yourse
 
 If you complete these ahead of time, please work on the additional problems. Otherwise, feel free to move on to other content.
 
-Run live-server, edit the nesting.js, destructuring.js, higher-order.js, and classes.js files.  Live-server has links to the 4 spec runners for each module.
+Run live-server, edit the forInLoops_Delete.js, nesting.js, destructuring.js, higher-order.js, and classes.js files.  Live-server has links to the 4 spec runners for each module.
