@@ -21,10 +21,11 @@ describe('Update Employee Info', function() {
           expect(removeDuplicates).toEqual(jasmine.any(Function));
       })
       it('removeDuplicates should return the array of employees', function() {
+          returnedArr = removeDuplicates([12, 56, 44, 3, 29, 56, 56, 3, 7, 12])
           expect(returnedArr).toEqual(jasmine.any(Array));
       })
       it ('Should remove all duplicate entries', function() {
-          var returnedArr = removeDuplicates().sort(function(a,b) {
+          var returnedArr = removeDuplicates([12, 56, 44, 3, 29, 56, 56, 3, 7, 12]).sort(function(a,b) {
               return a - b;
           });
           expect(returnedArr).toEqual(jasmine.any(Array));
