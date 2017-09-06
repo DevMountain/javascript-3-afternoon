@@ -32,8 +32,8 @@ They also have :
 
 - reports (other employees) that defaults to an empty array
 They can (methods) :
-   - hire
-        : Hire adds a new employee to their list of reports
+   - hire(employee)
+        : Accepts a new employee as a parameter and adds it to their list of reports
    - fire(index)
         : Fire removes employees from their list of reports at the given index
 
