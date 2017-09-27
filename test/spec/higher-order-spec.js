@@ -88,7 +88,7 @@ describe('map2', ()=>{
 })
 
 describe('reduce2', ()=>{
-  describe('totalPopulation', ()=>{
+  describe('bobsTotal', ()=>{
     it('should exist', ()=>{
       expect(bobsTotal).toBeDefined();
     })
