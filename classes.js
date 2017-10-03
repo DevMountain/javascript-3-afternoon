@@ -60,9 +60,9 @@ When employees are added or removed we need to check and update their title.  Th
 51-100 : Manager Plus
 101+ : Bestest Manager
 
-Everytime they fire an employee they get a bonus of $100 add to their .
+Everytime they fire an employee they get $100 added to their bonus.
 
-call you class ProgressiveManager
+call your class ProgressiveManager
 */
 
 
