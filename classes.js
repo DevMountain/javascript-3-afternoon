@@ -1,3 +1,4 @@
+
 // Classes
 
 /*
@@ -21,6 +22,8 @@ Each employee can:
 call your class Employee and receive all the data in the constructor in the order listed
 */
 
+
+
 /*
 
 Next, make a manager for Widget Co.
@@ -37,6 +40,10 @@ They can (methods) :
 call your class Manager
 
 */
+
+
+
+
 
 /*
 Manager for Widget Co. get promoted when they get more employees, and get a bonus when they fire employees.
@@ -57,6 +64,9 @@ Everytime they fire an employee they get $100 added to their bonus.
 
 call your class ProgressiveManager
 */
+
+
+
 
 /*
 BLACK DIAMOND
