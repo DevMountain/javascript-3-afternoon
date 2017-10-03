@@ -1,4 +1,3 @@
-
 // Classes
 
 /*
@@ -22,8 +21,6 @@ Each employee can:
 call your class Employee and receive all the data in the constructor in the order listed
 */
 
-
-
 /*
 
 Next, make a manager for Widget Co.
@@ -41,10 +38,6 @@ call your class Manager
 
 */
 
-
-
-
-
 /*
 Manager for Widget Co. get promoted when they get more employees, and get a bonus when they fire employees.
 Progressive Managers have all the same properties as the manager, but
@@ -60,13 +53,10 @@ When employees are added or removed we need to check and update their title.  Th
 51-100 : Manager Plus
 101+ : Bestest Manager
 
-Everytime they fire an employee they get a bonus of $100 add to their .
+Everytime they fire an employee they get $100 added to their bonus.
 
-call you class ProgressiveManager
+call your class ProgressiveManager
 */
-
-
-
 
 /*
 BLACK DIAMOND
