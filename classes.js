@@ -50,20 +50,11 @@ They can (methods) :
 call your class Manager
 
 */
-class Manager {
+class Manager extends Employee {
     constructor(first_name, last_name, email, age, reports){
-        this.first_name = first_name,
-        this.last_name = last_name,
-        this.email = email,
-        this.age = age,
+        super(first_name, last_name, email, age)
         this.reports = []
         }
-        
-        
-    makeWidget(){
-            return `${this.first_name} ${this.last_name} Widget`
-        }
-    
     hire(employee){
         this.reports.push(employee);
     }
@@ -93,21 +84,12 @@ Everytime they fire an employee they get $100 added to their bonus.
 
 call your class ProgressiveManager
 */
-class ProgressiveManager {
-    constructor(first_name, last_name, email, age, reports, hire, fire, title, bonus){
-        this.first_name = first_name,
-        this.last_name = last_name,
-        this.email = email,
-        this.age = age,
-        this.reports = [],
+class ProgressiveManager extends Manager{
+    constructor(first_name, last_name, email, age, reports, title, bonus){
+        super(first_name, last_name, email, age, reports)
         this.title = "Not a manager",
         this.bonus = 0
     }
-
-    makeWidget(){
-        return `${this.first_name} ${this.last_name} Widget`
-    }
-
     hire(employee){
         this.reports.push(employee);
         if (this.reports.length === 0){
@@ -178,4 +160,5 @@ class Machine {
         }
     }
 }
+
 
