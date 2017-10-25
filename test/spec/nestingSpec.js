@@ -1,7 +1,7 @@
 describe('Update Employee Info', function() {
     var returnedArr;
     it('Theo Trill object should be removed', function() { 
-        returnedArr = employeeUpdater();
+        returnedArr = employeeUpdater(employees);
         var flag = true;
         returnedArr.map(function(employee) {
             if (employee.firstName === 'Theo') flag = false;
