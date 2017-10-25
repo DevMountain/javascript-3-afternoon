@@ -31,7 +31,7 @@ var employees = [{
   "department": "Research and Development"
 }]
 
-// Create a function called 'employeeUpdater'. employeeUpdater will loop over the array above and perform the following:
+// Create a function called 'employeeUpdater' that takes no parameters. employeeUpdater will loop over the array above and perform the following:
 //  1. If employee's first name is Theo, remove that employee because he just got fired.
 //  2. If the employee's first name is Lorie, change her department to 'HR'.
 //  3. Return the updated employee array.
