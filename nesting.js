@@ -62,8 +62,8 @@ let employeeUpdater = () => {
 var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
 // Code here
-var removeDuplicates = () =>{
-  return [... new Set(workplaceAccidents)];
+var removeDuplicates = () => {
+    return [... new Set(workplaceAccidents)];
 };
 
 // === PROBLEM 3 ==========
@@ -117,7 +117,11 @@ var myCar = {
     ]
 }
 
-// Code here
+var recordCleaner = () => {
+    myCar.accidents.forEach((val, i, arr) => {
+        arr[i].atFaultForAccident = false;
+    })
+};
 
 
 // === PROBLEM 5 ==========
@@ -131,6 +135,18 @@ var myCar = {
 
 var numsArr = [[1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 
-
+var looper = () => {
+    numsArr.forEach((each) => {
+        each.forEach((val, i, arr) => {
+            if (val % 2 == 0) {
+                arr[i] = "even"
+            }
+            else {
+                arr[i] = "odd"
+            }
+        })
+    })
+    return numsArr
+};
 
 
