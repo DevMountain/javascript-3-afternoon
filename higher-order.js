@@ -1,7 +1,7 @@
 // Filter, Map, Reduce
 
-// Below we have an array of numbers
-// We want to filter down to just the even numbers
+// Below we have an array of numbers.
+// We want to use the filter method on this array to make a new array of just the even numbers.
 
 // The filter function takes a callback with the parameters
 // function(element, index, wholeArray){}  Function Form
@@ -11,12 +11,12 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 
 let evenNumbers // = mixedNumbers.filter(/* Provide Your Callback Here */)
 
-// Below we have an array of prices.  We want to calculate their totals after
-// We want to use a map function on the prices to calculate a new array of
-// post tax prices.  We'll use a 7% tax rate.
+// Below we have an array of prices.  
+// We want to use the map method on the prices array to calculate a new array of post-tax prices.  
+// We'll use a 7% tax rate.
 
-// Math reminder times the price by 1 + taxRate as a decimal
-// ie (price * 1.07)
+// Math reminder! To calculate the price after tax, multiply the price by 1 plus the taxRate as a decimal.
+// (e.g. if tax is 7%, the price afterTax could be calculated like this: afterTax = price * 1.07) 
 
 // The map function also takes a callback with the parameters
 // function(element, index, wholeArray){}  Function Form
@@ -29,9 +29,9 @@ let postTaxPrices // = prices.map(/* Provide Your Callback Here );
 
 
 // Below we have an array of populations.
-// We want to use a reduce to calculate the sum of all the populations.
+// We want to use the reduce method to calculate the sum of all the populations in the array.
 
-// The reduce function has a slightly different setup for it's callback
+// The reduce function has a slightly different setup for it's callback.
 // function(runningTotal, curElement, curIndex, wholeArray){} Function Form
 // (runningTotal, curElement, curIndex, wholeArray)=>{} Arrow Form
 
@@ -39,11 +39,12 @@ const populations = [8175133, 3792621, 2695598, 2100263]
 
 let totalPopulation //  = populations.reduce(/* Provide Your Callback Here */)
 
-// Now we're going to ramp up these a little bit.  Instead of just arrays of numbers
-// We are going to have array of objects that we want to use map filter and reduce with
 
-// Below we have an array of totally unique monsters we want to use a filter
-// function to return only the monsters that have a CP of over 200
+// Now we're going to ramp these up a little bit.  Instead of just arrays of numbers,
+// we are going to have array of objects that we want to use map, filter, and reduce with.
+
+// Below we have an array of totally unique monsters. 
+// We want to use the filter method to return only the monsters that have a CP of over 200.
 
 const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulbabunny","CP":135},
 {"monster":"Bulbabunny","CP":250},{"monster":"Ponylopse","CP":277},{"monster":"Ponylopse","CP":184},
@@ -57,7 +58,7 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 
 let myStrongest // Your code here
 
-// Below we have an array of orders.  but they all have different tax rates.
+// Below we have an array of orders, but they all have different tax rates.
 // We want to make a new array of total prices.
 
 const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax":0.11},
@@ -67,9 +68,8 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 
 let ordersTotal // Your code here
 
-// Below we have an array of purchases
-// We want to create a total for the purchases, but only want to total Bob's
-// purchases
+// Below we have an array of purchases. 
+// We want to create a total for the purchases, but only want to total Bob's purchases.
 
 const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 {"owner":"Bob","price":73},{"owner":"Barry","price":57},{"owner":"Barry","price":128},
