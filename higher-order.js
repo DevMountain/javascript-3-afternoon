@@ -103,7 +103,7 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 // Do not edit code above.
 
 /*
-  Use a high order method to get sum of all the order totals
+  Use a high order method to get sum of all the order totals including the tax
 */
 
 let ordersTotal //Code Here
