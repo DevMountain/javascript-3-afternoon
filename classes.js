@@ -48,15 +48,6 @@
 
   Call your new class Manager
 */
-class Manager extends Employee {
-    constructor(first_name, last_name, email, age, reports){
-        super(first_name, last_name, email, age)
-        this.reports = []
-        }
-    hire(employee){
-        this.reports.push(employee);
-    }
-}
 
 //Code Here
 
