@@ -57,8 +57,8 @@
 
 /*
   Managers for Widget Co. get promoted when they get more employees, and get a bonus when they fire employees.
-  Progressive Managers have all the same properties as the manager, copy the manager class but rename it to
-  ProgressiveManager but add the following additional properties:
+  Progressive Managers have all the same properties as the manager, copy the manager class and rename it to
+  ProgressiveManager. Add the following additional properties:
     - title - default 'Not a manager'
     - bonus - default 0
 
