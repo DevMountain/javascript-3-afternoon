@@ -57,12 +57,13 @@
 
 /*
   Managers for Widget Co. get promoted when they get more employees, and get a bonus when they fire employees.
-  Progressive Managers have all the same properties as the manager,
-  but they also have the following additional properties:
+  Progressive Managers have all the same properties as the manager, copy the manager class and rename it to
+  ProgressiveManager. Add the following additional properties:
     - title - default 'Not a manager'
     - bonus - default 0
 
-  When employees are added or removed we need to check and update their title. Their titles are as follows:
+  When employees are hired or fired we need to check how many reports he has and update their title based on that number. 
+  The titles based on number of reports are as follows:
     0 : Not a manager
     1-3 : Barely Manager
     4-10 : Mostly Manager
@@ -98,8 +99,8 @@
     - fixMachine
         - This function sets needs_reboot to true
     - reboot
-        - This function returns a function that is called when the machine is done rebooting
-        - It should set decrease wear_and_tear_count by 10, and set needs_reboot to false
+        - The reboot method should decrease wear_and_tear_count by 10, and set needs_reboot to false
+        - This function returns an anonymous function that runs a console log that says, "reboot complete"
 */
 
 //Code Here
