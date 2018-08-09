@@ -70,6 +70,7 @@
     51-100 : Manager Plus
     101+ : Bestest Manager
 
+  The numbers in the left-hand column refer to the number of employees who report to them (e.g. the 'reports' array).  
   Everytime they fire an employee they get $100 added to their bonus.
 
   Call your new class ProgressiveManager
