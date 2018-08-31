@@ -148,7 +148,7 @@ describe('Classes', function () {
       machine.makeWidgets(5000);
       machine.fixMachine();
 
-      expect(machine.needs_reboot).toBeTruthy();
+      expect(machine.needs_reboot).toBe(true);
     })
     it('can update wear and tear after fixes and reboot', function () {
       let machine = new Machine();
@@ -156,9 +156,13 @@ describe('Classes', function () {
       machine.fixMachine();
 
       let rebootComplete = machine.reboot();
+      // Ensure the values haven't been changed yet.
+      expect(machine.wear_and_tear_count).toEqual(100, 'wear_and_tear_count should be 100 until function returned by machine.reboot() is executed.');
+      expect(machine.needs_reboot).toBe(true, 'needs_reboot should be true until function returned by machine.reboot() is executed.');
+      
       rebootComplete();
-
       expect(machine.wear_and_tear_count).toEqual(90);
+      expect(machine.needs_reboot).toBe(false);
     })
   })
 })

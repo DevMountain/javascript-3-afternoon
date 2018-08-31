@@ -37,7 +37,7 @@
 
 /*
   Next, make a manager for Widget Co.
-  The manager has all the same properties as an Employee.
+  The manager has all the same properties as an Employee. Copy the Employee class and rename it Manager.
   Each manager has the following additional properties:
     - reports (other employees) that defaults to an empty array
   Each manager has the following additional methods:
@@ -57,8 +57,8 @@
 
 /*
   Managers for Widget Co. get promoted when they get more employees, and get a bonus when they fire employees.
-  Progressive Managers have all the same properties as the manager,
-  but they also have the following additional properties:
+  Progressive managers have all the same properties as managers. Copy the Manager class and rename
+  it to ProgressiveManager. Add the following additional properties:
     - title - default 'Not a manager'
     - bonus - default 0
 
