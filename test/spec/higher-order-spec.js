@@ -67,22 +67,24 @@ describe('filters2', ()=>{
 })
 
 describe('map2', ()=>{
-  describe('ordersTotal', ()=>{
+  describe('orderTotals', ()=>{
     it('should exist', ()=>{
-      expect(ordersTotal).toBeDefined();
+      expect(orderTotals).toBeDefined();
     })
     it('should be an array', ()=>{
-      expect(ordersTotal.length).toBeDefined();
+      expect(orderTotals.length).toBeDefined();
     })
     it('should have 10 elements', ()=>{
-      expect(ordersTotal.length).toBe(10);
+      expect(orderTotals.length).toBe(10);
     })
     it('should have the correct prices', ()=>{
-      let incorrect = [16.35, 44.940000000000005, 62.160000000000004,
-        88.80000000000001, 73.14, 77.52000000000001, 82.08000000000001,
-        55.59, 102.35, 54.239999999999995].reduce(
-        (p, e, i)=>p||(Math.abs(e-ordersTotal[i])>.02), false)
-      expect(incorrect).toBe(false);
+      for (let i = 0; i < orders.length; i++) {
+        const answer = orders[i].price * (1 + orders[i].tax);
+        expect(orderTotals[i]).toBe(answer, `Expected orderTotals index ${i} to be ${answer}, got ${orderTotals[i]}`)
+        if (orderTotals[i] != answer) {
+          break;
+        }
+      }
     })
   })
 })
