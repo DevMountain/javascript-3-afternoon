@@ -62,13 +62,13 @@
     - title - default 'Not a manager'
     - bonus - default 0
 
-  When employees are added or removed we need to check and update their title. Their titles are as follows:
-    0 : Not a manager
-    1-3 : Barely Manager
-    4-10 : Mostly Manager
-    11-50 : Manager
-    51-100 : Manager Plus
-    101+ : Bestest Manager
+  When employees are hired or fired, the manager's title should be updated based on the number of reports.
+    0 reports : Not a manager
+    1-3 reports : Barely Manager
+    4-10 reports : Mostly Manager
+    11-50 reports : Manager
+    51-100 reports : Manager Plus
+    101+ reports : Bestest Manager
 
   Everytime they fire an employee they get $100 added to their bonus.
 
@@ -98,8 +98,8 @@
     - fixMachine
         - This function sets needs_reboot to true
     - reboot
-        - This function returns a function that is called when the machine is done rebooting
-        - It should set decrease wear_and_tear_count by 10, and set needs_reboot to false
+        - This function returns an anonymous function that is called when the machine is done rebooting
+        - The anonymous function should set decrease wear_and_tear_count by 10, and set needs_reboot to false
 */
 
 //Code Here

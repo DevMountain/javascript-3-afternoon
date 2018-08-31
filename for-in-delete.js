@@ -49,7 +49,7 @@ function showValues( obj ) {
 
 /*
   Write a function called greaterThan10 that takes in an object. 
-  Write a for in loop that loops over the object and changes any value that is great than 10 to 0. 
+  Write a for in loop that loops over the object and changes any value that is greater than 10 to 0. 
   Return the updated object.
 */
 
