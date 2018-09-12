@@ -99,7 +99,7 @@
         - This function sets needs_reboot to true
     - reboot
         - This function returns an anonymous function that is called when the machine is done rebooting
-        - The anonymous function should set decrease wear_and_tear_count by 10, and set needs_reboot to false
+        - The anonymous function should decrease wear_and_tear_count by 10, and set needs_reboot to false
 */
 
 //Code Here
